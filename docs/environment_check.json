@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-24T00:23:42.577413+01:00",
+  "operating_system": "Darwin",
+  "architecture": "arm64",
+  "python_version": "3.11.2",
+  "virtual_environment_active": true,
+  "disk_free_gib": 22.0,
+  "commands_on_path": {
+    "python3": true,
+    "git": true,
+    "docker": false,
+    "ollama": false,
+    "uv": false
+  },
+  "chip": "Apple M2",
+  "memory_bytes": 8589934592,
+  "common_app_locations": {
+    "Docker": false,
+    "Ollama": false
+  },
+  "pypdf_version": "6.10.0"
+}

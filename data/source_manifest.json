@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "document_id": "jpmc_annual_report_2024",
+      "report_year": 2024,
+      "title": "JPMorgan Chase & Co. Annual Report 2024",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2024.pdf",
+      "local_path": "data/raw/jpmc_annual_report_2024.pdf",
+      "sha256": "78443e60b3188a70673ca7042d0bf9e4dc596d04072af729242886d22bd0a4e3",
+      "size_bytes": 17104906,
+      "page_count": 372,
+      "publication_date": null,
+      "publication_date_note": "Not independently verified for this PDF; not inferred from companion HTML.",
+      "retrieved_at": "2026-10-24T00:17:19.485626+01:00",
+      "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2024.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "document_id": "jpmc_annual_report_2025",
+      "report_year": 2025,
+      "title": "JPMorgan Chase & Co. Annual Report 2025",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf",
+      "local_path": "data/raw/jpmc_annual_report_2025.pdf",
+      "sha256": "2a3ee9733eafd01e7667c5540fbd797c4cc688d14f00638a877f5623d1316d9d",
+      "size_bytes": 4928865,
+      "page_count": 364,
+      "publication_date": null,
+      "publication_date_note": "Not independently verified for this PDF; not inferred from companion HTML.",
+      "retrieved_at": "2026-10-24T00:17:20.668282+01:00",
+      "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/annualreport-2025.pdf",
+      "content_type": "application/pdf"
+    }
+  ]
+}

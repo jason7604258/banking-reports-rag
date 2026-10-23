@@ -1,0 +1,7 @@
+[project]
+name = "banking-reports-rag"
+version = "0.1.0"
+description = "Evidence-based banking report and digital strategy assistant, starting with source preparation."
+requires-python = ">=3.11"
+dependencies = ["pypdf==6.10.0"]
+

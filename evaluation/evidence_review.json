@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-24",
+  "review_method": "Codex reviewed complete selected page text, independently cross-checked source facts, and visually inspected six rendered PDF pages. User review is pending.",
+  "status": "assistant_checked_development_draft",
+  "source_snapshot_reference": "data/source_manifest.json",
+  "evidence": [
+    {"evidence_id": "ev_2024_group_llm", "document_id": "jpmc_annual_report_2024", "pdf_page_number": 62, "printed_page_label": "60", "section": "COO letter: technology", "entity_scope": "group", "geography": "global", "anchor": "LLM Suite", "review_notes": "Group rollout during 2024 exceeded 200,000 colleagues; the passage does not independently establish Chase UK rollout."},
+    {"evidence_id": "ev_2024_ccb_digital", "document_id": "jpmc_annual_report_2024", "pdf_page_number": 65, "printed_page_label": "63", "section": "CCB letter: customer relationships", "entity_scope": "Chase_US_CCB", "geography": "US", "anchor": "Nearly 71 million", "review_notes": "Digitally active customers, approximate count; preserve original metric and reported year-over-year growth."},
+    {"evidence_id": "ev_2024_ccb_ai", "document_id": "jpmc_annual_report_2024", "pdf_page_number": 69, "printed_page_label": "67", "section": "CCB letter: technology, data and AI", "entity_scope": "Chase_US_CCB", "geography": "US", "anchor": "public cloud", "review_notes": "Data migration, readiness and platform investment; do not attribute CCB investment to the entire group or Chase UK."},
+    {"evidence_id": "ev_2025_ccb_digital", "document_id": "jpmc_annual_report_2025", "pdf_page_number": 54, "printed_page_label": "52", "section": "CCB letter: introduction", "entity_scope": "Chase_US_CCB", "geography": "US", "anchor": "75 million", "review_notes": "Digital engagement metric; extraction repeats chart labels and includes non-visible production text. Clean before retrieval ingestion."},
+    {"evidence_id": "ev_2025_icb_platform", "document_id": "jpmc_annual_report_2025", "pdf_page_number": 57, "printed_page_label": "55", "section": "CCB letter: building an international consumer bank", "entity_scope": "ICB", "geography": "international_Europe", "anchor": "cloud-native platform", "review_notes": "Same page includes US product text followed by ICB and UK text. Scope must be attached at passage level."},
+    {"evidence_id": "ev_2025_uk_customers", "document_id": "jpmc_annual_report_2025", "pdf_page_number": 57, "printed_page_label": "55", "section": "CCB letter: Chase UK passage", "entity_scope": "Chase_UK", "geography": "UK", "anchor": "2.8 million", "review_notes": "Report-disclosed customer count and dollar-denominated balances; do not invent an exact observation date or convert dollars to pounds."},
+    {"evidence_id": "ev_2025_ccb_ai", "document_id": "jpmc_annual_report_2025", "pdf_page_number": 59, "printed_page_label": "57", "section": "CCB letter: AI transformation", "entity_scope": "Chase_US_CCB", "geography": "US", "anchor": "AI transformation", "review_notes": "Cloud data and expanding agentic/generative applications; disclosure is not proof of identical effects across businesses."},
+    {"evidence_id": "ev_2025_icb_reporting", "document_id": "jpmc_annual_report_2025", "pdf_page_number": 59, "printed_page_label": "57", "section": "CCB letter: footnote 10", "entity_scope": "ICB_reporting", "geography": "international", "anchor": "Corporate", "review_notes": "Footnote 10 places international consumer initiatives in Corporate at the time of this disclosure, despite their appearance in a CCB letter."}
+  ]
+}
+
