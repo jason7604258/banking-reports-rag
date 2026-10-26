@@ -56,7 +56,7 @@
 ## 重跑檢查
 
 ```bash
-cd /Users/linyanyu/banking-reports-rag
+cd banking-reports-rag
 source .venv/bin/activate
 python scripts/prepare_sources.py
 python scripts/verify_phase1.py

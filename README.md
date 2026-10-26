@@ -37,9 +37,10 @@ python scripts/verify_phase1.py
 - `data/raw/`: original PDFs, excluded from Git.
 - `data/processed/`: generated text/audits, excluded from Git.
 - `evaluation/dev_questions.json`: the initial development questions and their reviewed evidence. Never ingest evaluation answers into a future RAG index.
-- `evaluation/evidence_review.json`: reviewed page references and evidence passages, generated for this source snapshot.
+- `evaluation/evidence_review.json`: reviewed page references, text anchors and review notes for this source snapshot.
 - `docs/PROJECT_PLAN.md`: development plan, architecture and later evaluation scope.
 - `docs/PHASE1_STATUS.md`: what has been completed, environment findings and next steps.
+- `docs/FIRST_10_QUESTIONS.md`: Chinese guide to the initial development questions.
 - `scripts/`: reproducible source preparation and verification.
 
 ## Planned sequence
