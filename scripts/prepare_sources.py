@@ -5,6 +5,8 @@ import argparse
 import hashlib
 import json
 import shutil
+import ssl
+import sys
 import tempfile
 from datetime import datetime
 from pathlib import Path
@@ -37,6 +39,16 @@ def sha256(path: Path) -> str:
     return result.hexdigest()
 
 
+def create_tls_context() -> ssl.SSLContext:
+    context = ssl.create_default_context()
+    # Some python.org macOS installs lack their optional CA symlink.
+    # Add the OS-provided trusted roots while retaining HTTPS verification.
+    system_ca = Path("/etc/ssl/cert.pem")
+    if sys.platform == "darwin" and system_ca.is_file():
+        context.load_verify_locations(cafile=str(system_ca))
+    return context
+
+
 def prepare(root: Path, download: bool = False) -> list[dict]:
     manifest_path = root / "data/source_manifest.json"
     old_manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
@@ -53,7 +65,7 @@ def prepare(root: Path, download: bool = False) -> list[dict]:
             request = Request(source["source_url"], headers={"User-Agent": "BankingReportsRAG/0.1 (research project)"})
             temporary = None
             try:
-                with urlopen(request, timeout=90) as response:
+                with urlopen(request, timeout=90, context=create_tls_context()) as response:
                     with tempfile.NamedTemporaryFile(dir=path.parent, suffix=".download", delete=False) as target:
                         temporary = Path(target.name)
                         shutil.copyfileobj(response, target)

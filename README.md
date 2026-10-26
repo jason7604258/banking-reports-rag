@@ -27,6 +27,8 @@ python scripts/verify_phase1.py
 
 `prepare_sources.py --download` downloads a report only when its PDF is missing. It records source URLs, retrieval timestamps, file sizes, page counts and SHA-256 hashes. Re-running it checks the existing snapshot instead of silently replacing documents. Deleting a PDF and downloading it again is still checked against its recorded hash.
 
+On macOS, the downloader also loads OS-provided trusted certificate roots when available. HTTPS certificate and hostname verification remain enabled.
+
 `audit_sources.py` extracts page-level text and creates keyword/page candidates. It does not perform final reading-order reconstruction, chunking, embedding, retrieval or answer generation. Printed page labels in general extraction remain unverified; reviewed evidence pages are recorded separately.
 
 `verify_phase1.py` checks the downloaded hashes and reviewed evidence references. These are source and project-integrity checks, not model-quality scores.
